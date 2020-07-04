@@ -1,0 +1,70 @@
+/* 1. * selector:- 
+ ……………………
+* means everything. This style is applicable for every thing in the web page.
+*/
+*{
+    color: blue;
+}
+/*
+2.Descendant Selector: li is considered as parent tag and a is considered as child tag.
+ For every anchor tag present in li tag this style is applicable 
+*/
+li a{
+    color: white;
+    background: blue;
+}
+/*
+3. Adjacent Selector:For every ul tag which is adjacent to a tag,this style is applicable. 
+*/
+a+ul{
+    color: red;
+}
+/*
+For every paragraph tag, which is adjacent to div tag this style is applicable. 
+*/
+div+p{
+    color: blue;
+}
+/*
+4. Attribute Selector: 
+ ……………………………..
+We can define style based on attributes.
+For all href attributes of anchor tag this style is applicable.
+
+*/
+a[href]{
+    color: red;
+    background: yellow;
+}
+/*
+If the value of href attribute is http://amazon.com then only this style is applicable.
+*/
+a[href="http://amazon.com"]{
+    color: red;
+    background: yellow;
+}
+/*
+This style is applicable for all password fields of input tag.
+*/
+input[type=Password]{
+    background: red;
+}
+/*
+5. nth of type selectors: For every 2nd li tag this style is applicable.
+*/
+li:nth-of-type(2){
+    color: red;
+}
+/*
+For every 2nd ul tag this style is applicable.
+*/
+ul:nth-of-type(2){
+    color: red;
+    background: yellow;
+}
+/*
+For every even numbered li this style is applicable.
+*/
+li:nth-of-type(even){
+    color: red;
+}
